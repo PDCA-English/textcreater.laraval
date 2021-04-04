@@ -5,8 +5,13 @@
     <p id="message"></p>
  
     <table border="1">
-      <tr v-for="(worker, index) in workers" :key="index">
-        <td v-for="(column, index) in worker" :key="index" id="column"></td>
+      {{-- <tr v-for="(worker, index) in workers" :key="index"> --}}
+        {{-- <td v-for="(column, index) in worker" :key="index" id="column"></td> --}}
+      @foreach ($workers as $index => $worker)
+        @foreach ($workers as $index => $worker)
+        @endforeach
+      @endforeach
+      
       </tr>
     </table>
   </div>

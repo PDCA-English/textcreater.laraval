@@ -22,7 +22,7 @@ class DocumentController extends Controller
        // 出力の指定です、ファイル名、拡張子、Dはダウンロードを意味します。
        $this->pdf->output('test' . '.pdf', 'I');
        // 印刷サイズ設定
-    //    $this->pdf->setPageFormat('B5','P');
+       $this->pdf->setPageFormat('B5','P');
 
        return;
    }
